@@ -85,16 +85,16 @@ class mp3
 
 //end of mp3 module
 
-$stops = "audiocloud933333333331/stops/";
+$stops = "audiocloud/stops/";
 
-$announcements = "audiocloud933333333331/announcements/";
+$announcements = "audiocloud/announcements/";
 
-$etc = "audiocloud933333333331/etc/";
+$etc = "audiocloud/etc/";
 
 function get_line_path($transport, $line)
 {
-    $bus = "audiocloud933333333331/lines/bus/";
-    $tram = "audiocloud933333333331/lines/tram/";
+    $bus = "audiocloud/lines/bus/";
+    $tram = "audiocloud/lines/tram/";
     switch ($transport) {
         case 'bus':
             if (!file_exists($bus . $line . ".mp3")) {
